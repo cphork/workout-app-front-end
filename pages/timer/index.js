@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 class Countdown extends Component {
+
     state = {
         timerOn: false,
         timerStart: 0,
@@ -57,6 +58,7 @@ class Countdown extends Component {
             }
         }
     };
+
 
     render() {
         const { timerTime, timerStart, timerOn } = this.state;
@@ -117,5 +119,7 @@ class Countdown extends Component {
         );
     }
 }
+
+
 
 export default Countdown;

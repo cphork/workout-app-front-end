@@ -1,22 +1,54 @@
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
-// import Footer from './components/Footer'
-// import Navbar from './components/Navbar'
-import Link from 'next/link'
+import Link from 'next/link';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Home() {
   return (
-    <div>
-      <h1>Workout App</h1>
+    <>
+      <Container fluid>
+        <Row>
+          <iframe width="350" height="250" src="https://www.youtube.com/embed/Vzo-EL_62fQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <Col>
+            <p>Yay, it's fluid!</p>
+          </Col>
+        </Row>
+      </Container>
 
-      <iframe width="500" height="300" src="https://www.youtube.com/embed/Vzo-EL_62fQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <Container fluid>
+        <Row>
+          <Link href='/legs'>
+            <img src='https://res.cloudinary.com/dejg3dz16/image/upload/v1623775652/depositphotos_50048481-stock-photo-mid-section-of-muscular-man_ev32lo.jpg' alt='' />
+          </Link>
+          <Col>
+            <p>Legs Workout</p>
+          </Col>
+        </Row>
+      </Container>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <Link href='/arms'>
-        <a>Workout Lists</a>
-      </Link>
-    </div>
+      <Container fluid>
+        <Row>
+          <Link href='/arms'>
+            <img src='https://res.cloudinary.com/dejg3dz16/image/upload/v1623776459/womanback_qqvpgq.jpg' alt='' />
+          </Link>
+          <Col>
+            <p>Arms Workout</p>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container fluid>
+        <Row>
+          <Link href='/glutes'>
+            <img src='https://res.cloudinary.com/dejg3dz16/image/upload/v1623776131/10-Best-Glute-Exercises-1024x576_ttlkfx.webp' alt='' />
+          </Link>
+          <Col>
+            <p>Glutes Workout</p>
+          </Col>
+        </Row>
+      </Container>
+    </>
+
   )
 }
+
